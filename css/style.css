@@ -1,0 +1,401 @@
+@charset "UTF-8";
+
+/* 共通 */
+body {
+	font-family: "Noto Sans JP", sans-serif;
+	text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+main {
+  position: relative;
+}
+
+address {
+  font-style: normal;
+}
+
+.tel-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu-image1 {
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.menu-image2 {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  border: 0;
+}
+
+/* スマホ 〜 タブレット版 */
+@media (max-width: 1023px) {
+  .header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px 0 16px;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  /* ロゴだけ左寄せ */
+  .logo-link {
+    margin-right: auto;
+    display: block;
+    width: 98px;
+    height: auto;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .header-tel-icon {
+    width: 18px;
+    height: auto;
+  }
+
+  .header-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .tel-info {
+    width: 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400
+  }
+
+  .introduction {
+    height: 722px;
+    padding: 64px 0 140px 0;
+  }
+
+  .heading {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 32px;
+  }
+
+  .introduction-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .introduction-text {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    height: 192px;
+    gap: 16px;
+    text-align: left;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .menu {
+    height: 999px;
+    background-color: #181818;
+    padding: 122px 0 139px 0;
+    position: relative;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .menu-category-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .solid-line {
+    height: 1px;
+    background-color: #DDDDDD;
+    width: 262px; 
+    margin: 20px 0;
+  }
+
+  .menu-detail-container {
+    flex-direction: column;
+    width: 358px;
+  }
+
+  .menu-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    text-align: left;
+  }
+
+  .menu-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding-left: 24px;
+    height: 24px;
+  }
+
+  .price {
+    text-align: right;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 284px;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #1F1F1F;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 24px;
+  }
+
+  .footer small {
+    display: block;
+    font-size: 12px;
+    padding-top: 4px;
+    width: 72px;
+    height: 14px;
+  }
+
+  .footer a {
+    width: 243px;
+    padding-bottom: 24px;
+  }
+
+  .menu-image1,
+  .menu-image2 {
+    width: 90%;
+    max-width: 358px;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+
+
+/* PC版 */
+@media (min-width: 1024px) {
+  .header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 48px 0 40px;
+    gap: 24px;
+    font-size: 16px;
+  }
+
+  .header-navi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  /* ロゴだけ左寄せ */
+  .logo-link {
+    margin-right: auto;
+    display: block;
+    width: 164px;
+    height: auto;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .header-tel-icon {
+    width: 24px;
+    height: auto;
+  }
+
+  .header-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  .tel-info {
+    width: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400
+  }
+
+  .introduction {
+    height: 764px;
+    padding: 80px 0 260px 0;
+  }
+
+  .heading {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 48px;
+  }
+
+  .introduction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .introduction-text {
+    display: flex;
+    flex-direction: column;
+    width: 464px;
+    gap: 24px;
+    text-align: left;
+    line-height: 2;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .menu {
+    height: 1156px;
+    background-color: #181818;
+    padding: 260px 0;
+    position: relative;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .menu-category-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .solid-line {
+    height: 1px;
+    background-color: #DDDDDD;
+    width: 396px; 
+    margin: 20px 0;
+  }
+
+  .menu-detail-container {
+    display: flex;
+    text-align: left;
+    width: 492px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .menu-column {
+    display: flex;
+    flex-direction: column;
+    width: 246px;
+    padding-bottom: 16px;
+    grid-auto-rows: 24px;
+    row-gap: 4px;
+  }
+
+  .menu-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding-left: 24px;
+    height: 24px;
+  }
+
+  .price {
+    text-align: right;
+  }
+
+  .menu-image1,
+  .menu-image2 {
+    width: 90%;  
+    max-width: 853px;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 431px;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #1F1F1F;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .footer address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p small {
+    display: block;
+    font-size: 12px;
+    padding-top: 4px;
+    width: 72px;
+    height: 14px;
+    text-align: center;
+  }
+
+  .footer a {
+    padding-bottom: 24px;
+  }
+}
