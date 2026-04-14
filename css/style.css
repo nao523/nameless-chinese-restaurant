@@ -21,6 +21,31 @@ address {
   color: #ffffff;
 }
 
+figure picture,
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+.mv {
+  overflow: hidden;
+}
+
+.mv img {
+  width: 100%;
+  height: auto;
+  animation: zoomMv 8s ease-out forwards;
+}
+
+@keyframes zoomMv {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .menu-image1 {
   top: 0;
   right: 0;
@@ -156,6 +181,7 @@ address {
   }
 
   .menu-detail-container {
+    display: flex;
     flex-direction: column;
     width: 358px;
   }
